@@ -1,0 +1,61 @@
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  padding: 0px;
+  width: 100vw;
+  height: 3rem;
+  background-color: #f9f9f9;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  width: 700vw;
+  height: 80%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 20s;
+  animation-duration: 300s;
+}
+.ticker__item {
+  display: inline-grid;
+  grid-template-columns: 7% 93%;
+  font-size: 5;
+  color: black;
+  height: inherit;
+  width: 550px;
+}
+.ticker__img {
+  height: 20%;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+.ticker__text {
+  padding: 0;
+  display: inline;
+  height: 80%;
+}

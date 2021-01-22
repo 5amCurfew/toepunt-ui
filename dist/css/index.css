@@ -1,0 +1,97 @@
+html {
+  display: flex;
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade_in {
+  animation: fadeIn 1s ease-in both;
+}
+
+.mainContainer {
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 29vw 29vw 29vw;
+  height: 92vh;
+}
+
+.gridContainer {
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+.resultContainer {
+  display: grid;
+  margin-left: 5px;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+.square-home {
+  width: 40px;
+  height: 40px;
+  background-color: #6aafd7;
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+  color: darkgrey;
+}
+.square-draw {
+  width: 40px;
+  height: 40px;
+  background-color: #c5c4c4;
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+  color: darkgrey;
+}
+.square-away {
+  width: 40px;
+  height: 40px;
+  background-color: #ffbcea;
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+  color: darkgrey;
+}
+.square-both-to-score {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom right, #6aafd7 50%, #ffbcea 50%);
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+  color: darkgrey;
+}
+.probability-home,
+.probability-draw,
+.probability-away,
+.probability-both-to-score {
+  /* Center the contents of the grid items. Making each grid item a Flex Container */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+g {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+img {
+  padding: 10px;
+}
