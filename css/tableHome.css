@@ -1,0 +1,30 @@
+h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+.responsive-table-home li {
+  border-radius: 3px;
+  padding: 5px 5px;
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 5px;
+}
+.responsive-table-home .table-header-home {
+  background-color: #077bbd;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.responsive-table-home .table-row-home {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px #077bbd;
+}
+.responsive-table-home .col-1 {
+  flex-basis: 10%;
+}
+.responsive-table-home .col-2 {
+  flex-basis: 80%;
+}
+.responsive-table-home .col-3 {
+  flex-basis: 10%;
+}
