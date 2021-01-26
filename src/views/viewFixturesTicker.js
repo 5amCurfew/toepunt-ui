@@ -8,7 +8,7 @@ export const create = (fixtures) => {
         let formattedDate = dayjs(fixtures[i].fixture.date).calendar();
         let markup = `
             <div class="ticker__item">
-                <img src=${fixtures[i].league.logo} class='ticker__img'>
+                <div class="ticker__imgContainer"><img src=${fixtures[i].league.logo} class='ticker__img'></div>
                 <div class="ticker__text">
                     ${fixtures[i].teams.home.name} vs ${fixtures[i].teams.away.name},  ${formattedDate}<br>
                     ${fixtures[i].fixture.venue.name}

@@ -5,9 +5,9 @@ export const teamProfiles = [
         "MID": 75,
         "DEF": 73,
         "OVR": 74,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -16,9 +16,9 @@ export const teamProfiles = [
         "MID": 79,
         "DEF": 78,
         "OVR": 80,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -27,31 +27,31 @@ export const teamProfiles = [
         "MID": 77,
         "DEF": 75,
         "OVR": 76,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Barnsley",
-        "ATT": 69,
+        "ATT": 68,
         "MID": 67,
-        "DEF": 67,
+        "DEF": 68,
         "OVR": 67,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Birmingham City",
         "ATT": 70,
-        "MID": 71,
-        "DEF": 71,
+        "MID": 70,
+        "DEF": 72,
         "OVR": 71,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -60,9 +60,9 @@ export const teamProfiles = [
         "MID": 71,
         "DEF": 70,
         "OVR": 71,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -73,18 +73,18 @@ export const teamProfiles = [
         "OVR": 68,
         "updated_at_index": 353,
         "valid_from": "2019-09-11",
-        "valid_to": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Brentford",
         "ATT": 72,
         "MID": 71,
-        "DEF": 73,
+        "DEF": 72,
         "OVR": 72,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -93,9 +93,9 @@ export const teamProfiles = [
         "MID": 75,
         "DEF": 75,
         "OVR": 75,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -104,9 +104,9 @@ export const teamProfiles = [
         "MID": 68,
         "DEF": 70,
         "OVR": 70,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -115,9 +115,9 @@ export const teamProfiles = [
         "MID": 76,
         "DEF": 77,
         "OVR": 76,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -128,7 +128,7 @@ export const teamProfiles = [
         "OVR": 67,
         "updated_at_index": 278,
         "valid_from": "2018-09-12",
-        "valid_to": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -137,9 +137,9 @@ export const teamProfiles = [
         "MID": 71,
         "DEF": 71,
         "OVR": 71,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -150,7 +150,7 @@ export const teamProfiles = [
         "OVR": 69,
         "updated_at_index": 419,
         "valid_from": "2020-09-23",
-        "valid_to": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -159,20 +159,20 @@ export const teamProfiles = [
         "MID": 83,
         "DEF": 81,
         "OVR": 82,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Coventry City",
-        "ATT": 68,
+        "ATT": 67,
         "MID": 68,
         "DEF": 68,
         "OVR": 68,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -181,20 +181,20 @@ export const teamProfiles = [
         "MID": 76,
         "DEF": 76,
         "OVR": 77,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Derby County",
         "ATT": 69,
-        "MID": 71,
+        "MID": 70,
         "DEF": 69,
         "OVR": 70,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -203,31 +203,31 @@ export const teamProfiles = [
         "MID": 79,
         "DEF": 78,
         "OVR": 79,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Fulham",
         "ATT": 75,
-        "MID": 75,
+        "MID": 76,
         "DEF": 74,
         "OVR": 75,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Huddersfield Town",
         "ATT": 69,
         "MID": 69,
-        "DEF": 68,
+        "DEF": 69,
         "OVR": 69,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -238,7 +238,7 @@ export const teamProfiles = [
         "OVR": 68,
         "updated_at_index": 419,
         "valid_from": "2020-09-23",
-        "valid_to": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -249,7 +249,7 @@ export const teamProfiles = [
         "OVR": 68,
         "updated_at_index": 353,
         "valid_from": "2019-09-11",
-        "valid_to": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -258,20 +258,20 @@ export const teamProfiles = [
         "MID": 76,
         "DEF": 74,
         "OVR": 75,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Leicester City",
         "ATT": 81,
-        "MID": 80,
+        "MID": 81,
         "DEF": 77,
         "OVR": 80,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -280,20 +280,20 @@ export const teamProfiles = [
         "MID": 84,
         "DEF": 86,
         "OVR": 85,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Luton Town",
         "ATT": 68,
         "MID": 68,
-        "DEF": 68,
+        "DEF": 69,
         "OVR": 68,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -302,9 +302,9 @@ export const teamProfiles = [
         "MID": 86,
         "DEF": 83,
         "OVR": 85,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -313,9 +313,9 @@ export const teamProfiles = [
         "MID": 82,
         "DEF": 81,
         "OVR": 82,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -324,20 +324,20 @@ export const teamProfiles = [
         "MID": 70,
         "DEF": 70,
         "OVR": 70,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Millwall",
-        "ATT": 69,
+        "ATT": 70,
         "MID": 70,
-        "DEF": 71,
+        "DEF": 69,
         "OVR": 70,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -346,9 +346,9 @@ export const teamProfiles = [
         "MID": 76,
         "DEF": 75,
         "OVR": 77,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -357,20 +357,20 @@ export const teamProfiles = [
         "MID": 73,
         "DEF": 72,
         "OVR": 73,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Nottingham Forest",
         "ATT": 71,
-        "MID": 70,
+        "MID": 71,
         "DEF": 71,
         "OVR": 71,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -379,20 +379,20 @@ export const teamProfiles = [
         "MID": 72,
         "DEF": 71,
         "OVR": 71,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Queens Park Rangers",
         "ATT": 70,
         "MID": 69,
-        "DEF": 68,
-        "OVR": 68,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "DEF": 69,
+        "OVR": 69,
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -401,9 +401,9 @@ export const teamProfiles = [
         "MID": 71,
         "DEF": 70,
         "OVR": 71,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -412,20 +412,20 @@ export const teamProfiles = [
         "MID": 67,
         "DEF": 67,
         "OVR": 67,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Sheffield United",
         "ATT": 73,
         "MID": 74,
-        "DEF": 75,
-        "OVR": 75,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "DEF": 74,
+        "OVR": 74,
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -434,9 +434,9 @@ export const teamProfiles = [
         "MID": 71,
         "DEF": 69,
         "OVR": 70,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -445,20 +445,20 @@ export const teamProfiles = [
         "MID": 77,
         "DEF": 76,
         "OVR": 77,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Stoke City",
-        "ATT": 70,
-        "MID": 70,
+        "ATT": 68,
+        "MID": 71,
         "DEF": 69,
         "OVR": 71,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -469,18 +469,18 @@ export const teamProfiles = [
         "OVR": 69,
         "updated_at_index": 278,
         "valid_from": "2018-09-12",
-        "valid_to": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
         "Name": "Swansea City",
         "ATT": 72,
-        "MID": 69,
+        "MID": 70,
         "DEF": 71,
         "OVR": 70,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -489,9 +489,9 @@ export const teamProfiles = [
         "MID": 82,
         "DEF": 82,
         "OVR": 82,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -500,9 +500,9 @@ export const teamProfiles = [
         "MID": 75,
         "DEF": 72,
         "OVR": 74,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -511,9 +511,9 @@ export const teamProfiles = [
         "MID": 74,
         "DEF": 72,
         "OVR": 73,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -522,9 +522,9 @@ export const teamProfiles = [
         "MID": 78,
         "DEF": 77,
         "OVR": 77,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -535,7 +535,7 @@ export const teamProfiles = [
         "OVR": 69,
         "updated_at_index": 419,
         "valid_from": "2020-09-23",
-        "valid_to": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -544,9 +544,9 @@ export const teamProfiles = [
         "MID": 80,
         "DEF": 78,
         "OVR": 79,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     },
     {
@@ -555,9 +555,9 @@ export const teamProfiles = [
         "MID": 67,
         "DEF": 67,
         "OVR": 67,
-        "updated_at_index": 442,
-        "valid_from": "2021-01-15",
-        "valid_to": "2021-01-21",
+        "updated_at_index": 443,
+        "valid_from": "2021-01-21",
+        "valid_to": "2021-01-27",
         "is_current": true
     }
 ];
