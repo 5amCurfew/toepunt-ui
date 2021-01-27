@@ -23,6 +23,7 @@ const clear = (div) => {
     document.querySelector(`${div}`).innerHTML = '';
 };
 
+
 ///////////////////////////////////////////////
 // GAME Controller
 ///////////////////////////////////////////////
@@ -59,6 +60,21 @@ const gameController = async (h, a) => {
     }
 }
 
+const loaderMarkup = `
+    <div id="loader" class='loaderContainer' style="align-content: center; position:absolute; top: 0; right: 42%; width: 200px; padding:0; font-size: 20px;">
+        <p style="display: inline-block;">Loading...</p>
+        <div 
+            style="
+                display: inline-block;
+                text-align: center;
+                width: 20px;
+                animation-name: spin;
+                animation-duration: 2000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;">
+                &#9917;</div>
+    </div>
+`
 ///////////////////////////////////////////////
 // EVENT LISTENERS
 ///////////////////////////////////////////////
@@ -68,11 +84,13 @@ window.addEventListener('load', async () => {
     viewMenu.create('home', teamProfiles);
     viewMenu.create('away', teamProfiles);
 
+    document.querySelector(`.ticker-wrap`).insertAdjacentHTML('beforeend', loaderMarkup);
     state.fixtures = await fixtures.create(39);
     // Default load: 1. Set chosen defaults 2. Change hash which then calls gameController(h,a)
-    state.home_chosen = 'Fulham';
+    state.home_chosen = 'Arsenal';
     state.away_chosen = 'Tottenham Hotspur';
 
+    document.getElementById("loader").remove();
     viewFixturesTicker.create(state.fixtures);
 
     window.location.hash = `${state.home_chosen ? state.home_chosen : 'H'}_vs_${state.away_chosen ? state.away_chosen : 'A'}`;
