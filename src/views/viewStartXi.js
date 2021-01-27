@@ -24,10 +24,11 @@ export const create = (side, lineUp = 'default') => {
 
     if(lineUp != 'default'){
 
+        const form = lineUp.formation.split('-');
         const gk = lineUp.startXI.filter( (p) => p.player.pos == 'G');
-        const def = lineUp.startXI.filter( (p) => p.player.pos == 'D');
-        const mid = lineUp.startXI.filter( (p) => p.player.pos == 'M');
-        const att = lineUp.startXI.filter( (p) => p.player.pos == 'F');
+        const def = lineUp.startXI.slice(1, parseInt(form[0])+1)
+        const mid = lineUp.startXI.slice(parseInt(form[0])+1, 11 - parseInt(form.slice(-1)));
+        const att = lineUp.startXI.slice(-form.slice(-1))
 
         ///////////////////////////////
         // GK
@@ -84,7 +85,7 @@ export const create = (side, lineUp = 'default') => {
             .data(def)
             .enter()
             .append('circle')
-                .attr('cy', function(d, i) { return y( ((100/(def.length+1))*(i+1)) ) })
+                .attr('cy', function(d, i) { return y(side == 'home' ? ((100/(def.length+1))*(i+1)) : ((100/(def.length+1))*(def.length-i)) ) })
                 .attr('cx', function(d, i) { return x(side == 'home' ? 25 : 75) })
                 .attr('fill', side == 'home' ? '#51a2d0' : '#ff8adb')
                 .attr('stroke', 'grey')
@@ -98,7 +99,7 @@ export const create = (side, lineUp = 'default') => {
             .data(def)
             .enter()
             .append('text')
-                .attr('y', function(d, i) { return y( ((100/(def.length+1))*(i+1)) - 1.5) })
+                .attr('y', function(d, i) { return y(side == 'home' ? ((100/(def.length+1))*(i+1)) - 1.5 : ((100/(def.length+1))*(def.length-i)) - 1.5 ) })
                 .attr('x', function(d, i) { return x(side == 'home' ? 25-1.5 : 75-1.5) })
                 .attr('font-size', 11.5)
                 .attr('fill', side == 'home' ? '#ffffff' : '#000000')
@@ -111,7 +112,7 @@ export const create = (side, lineUp = 'default') => {
             pitch
                 .append("text")
                 .attr('id',  "t" + d.player.name.replaceAll(' ', '_').replaceAll('.', '_'))
-                .attr('y', function() { return y( ((100/(def.length+1))*(i+1)) + 10 )})
+                .attr('y', function() { return y( side == 'home' ? ((100/(def.length+1))*(i+1)) + 10 : ((100/(def.length+1))*(def.length-i)) + 10 )})
                 .attr('x', function() { return x(side == 'home' ? 25-7 : 75 - 7) })
                 .attr("font-size", ".75em")
                 .attr("color", "black")
@@ -134,8 +135,8 @@ export const create = (side, lineUp = 'default') => {
                 pitch
                     .append("text")
                     .attr('id',  "t" + d.player.name.replaceAll(' ', '_').replaceAll('.', '_'))
-                    .attr('y', function() { return y( ((100/(midLayer.length+1))*(i+1)) + 10) })
-                    .attr('x', function() { return x( side == 'home' ? 25 + 50/(midLayers.length+1)*(index+1) - 7 : 100 - 7 - (25 + 50/(midLayers.length+1)*(index+1))) })
+                    .attr('y', function() { return y( side == 'home' ? ((100/(midLayer.length+1))*(i+1)) + 10 : ((100/(midLayer.length+1))*(midLayer.length-i)) + 10) })
+                    .attr('x', function() { return x( side == 'home' ? 25 - 7 + 50/(midLayers.length+1)*(index+1) : 75 - 7 - (50/(midLayers.length+1)*(index+1))) })
                     .attr("font-size", ".75em")
                     .attr("color", "black")
                     .text(function() {
@@ -150,10 +151,10 @@ export const create = (side, lineUp = 'default') => {
                 .enter()
                 .append('circle')
                     .attr('cy', function(d, i) { 
-                        return y( ((100/(midLayer.length+1))*(i+1)) ) 
+                        return y( side == 'home' ? ((100/(midLayer.length+1))*(i+1)) :  ((100/(midLayer.length+1))*(midLayer.length-i)) ) 
                     })
                     .attr('cx', function(d, i) { 
-                        return x( side == 'home' ? 25 + 50/(midLayers.length+1)*(index+1) : 100 - (25 + 50/(midLayers.length+1)*(index+1)) )
+                        return x( side == 'home' ? 25 + 50/(midLayers.length+1)*(index+1) : 75 - (50/(midLayers.length+1)*(index+1)) )
                     })
                     .attr('fill', side == 'home' ? '#51a2d0' : '#ff8adb')
                     .attr('stroke', 'grey')
@@ -168,10 +169,10 @@ export const create = (side, lineUp = 'default') => {
                 .enter()
                 .append('text')
                     .attr('y', function(d, i) { 
-                        return y( ((100/(midLayer.length+1))*(i+1)) -1.5) 
+                        return y( side == 'home' ? ((100/(midLayer.length+1))*(i+1)) - 1.5 :  ((100/(midLayer.length+1))*(midLayer.length-i)) - 1.5) 
                     })
                     .attr('x', function(d, i) { 
-                        return x( side == 'home' ? 25-1.5 + 50/(midLayers.length+1)*(index+1) : 100-1.5 - (25 + 50/(midLayers.length+1)*(index+1)))
+                        return x( side == 'home' ? 25 - 1.5 + 50/(midLayers.length+1)*(index+1) : 75 - 1.5 - (50/(midLayers.length+1)*(index+1)))
                     })
                         .attr('font-size', 11.5)
                         .attr('fill', side == 'home' ? '#ffffff' : '#000000')
@@ -184,7 +185,7 @@ export const create = (side, lineUp = 'default') => {
             .data(att)
             .enter()
             .append('circle')
-                .attr('cy', function(d, i) { return y( ((100/(att.length+1))*(i+1)) ) })
+                .attr('cy', function(d, i) { return y( side == 'home' ? ((100/(att.length+1))*(i+1)) : ((100/(att.length+1))*(att.length-i)) ) })
                 .attr('cx', function(d, i) { return x(side == 'home' ? 75 : 25) })
                 .attr('fill', side == 'home' ? '#51a2d0' : '#ff8adb')
                 .attr('stroke', 'grey')
@@ -197,7 +198,7 @@ export const create = (side, lineUp = 'default') => {
             .data(att)
             .enter()
             .append('text')
-                .attr('y', function(d, i) { return y( ((100/(att.length+1))*(i+1)) -1.5) })
+                .attr('y', function(d, i) { return y( side == 'home' ? ((100/(att.length+1))*(i+1)) - 1.5 : ((100/(att.length+1))*(att.length-i)) - 1.5) })
                 .attr('x', function(d, i) { return x(side == 'home' ? 75-1.5 : 25-1.5) })
                 .attr('font-size', 11.5)
                 .attr('fill', side == 'home' ? '#ffffff' : '#000000')
@@ -210,7 +211,7 @@ export const create = (side, lineUp = 'default') => {
             pitch
                 .append("text")
                 .attr('id',  "t" + d.player.name.replaceAll(' ', '_'))
-                .attr('y', function() { return y( ((100/(att.length+1))*(i+1)) + 10) })
+                .attr('y', function() { return y( side == 'home' ? ((100/(att.length+1))*(i+1)) + 10 : ((100/(att.length+1))*(att.length-i)) + 10) })
                 .attr('x', function() { return x(side == 'home' ? 75-7 : 25 - 7) })
                 .attr("font-size", ".75em")
                 .attr("color", "black")
