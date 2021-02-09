@@ -5,6 +5,7 @@ import * as viewFixturesTicker from './views/viewFixturesTicker';
 import * as viewGame from './views/viewGame.js';
 import * as viewResults from './views/viewResults.js'
 import * as viewMenu from './views/viewMenu.js';
+import * as viewRating from './views/viewRating.js';
 import * as viewStartXi from './views/viewStartXi.js';
 import * as viewStartXiTable from './views/viewStartXiTable.js';
 
@@ -14,7 +15,7 @@ const toepunt =
 ' / __/ __ \\/ _ \\/ __ \\/ / / / __ \\/ __/  ______   / / / / /\n'+ 
 '/ /_/ /_/ /  __/ /_/ / /_/ / / / / /_   /_____/  / /_/ / /\n'+  
 '\\__/\\____/\\___/ .___/\\__,_/_/ /_/\\__/            \\__,_/_/ \n'+  
-'           /_/                                            \n'
+'              /_/                                            \n'
 
 let state = {"updatedAt": new Date};
 window.state = state;
@@ -41,6 +42,8 @@ const gameController = async (h, a) => {
         viewGame.create(state.Game.scores, 'goal-grid');
         viewResults.create(state.Game);
 
+        clear('#rating-home');
+        viewRating.create('home', state.Game.home);
         await state.Game.home.getLatestFixtureId();
         await state.Game.home.getLatestLineUp();
         clear('#pitch-home');
@@ -48,6 +51,8 @@ const gameController = async (h, a) => {
         clear('.teamTableContainer-home');
         viewStartXiTable.create('home', state.Game.home.latest_line_up);
 
+        clear('#rating-away');
+        viewRating.create('away', state.Game.away);
         await state.Game.away.getLatestFixtureId();
         await state.Game.away.getLatestLineUp();
         clear('#pitch-away');

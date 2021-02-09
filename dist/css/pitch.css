@@ -1,5 +1,6 @@
 .pitch {
   margin-left: -10px;
+  margin-top: -5px;
   flex-grow: 1;
 }
 svg text {
